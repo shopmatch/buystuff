@@ -31,6 +31,7 @@ $(document).ready(function(){
 
   });
 
+/*
 window.addEventListener("keydown", moveSomething, false);
 
 function moveSomething(e) {
@@ -66,8 +67,8 @@ function moveSomething(e) {
             break;
   }
 }
-
- function move() {
+*/
+function move() {
     var elem = document.getElementById("myBar");
     var width = counter;
 	elem.style.width = width + '%';
