@@ -1,6 +1,5 @@
 
 #container {
-  width: 500px;
   margin: auto !important;
   display: block;
   height: 500px;
@@ -20,10 +19,8 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   color: #fff;
   padding: 20px;
-  width: 360px;
   height: 360px;
   top: 50px;
-  left: 50px;
   position: relative;
   cursor: hand;
 }
@@ -43,7 +40,6 @@
 }
 .avatar {
   background: #222;
-  width: 340px;
   height: 340px;
   display: block;
   margin-top: 10px;
