@@ -12,6 +12,36 @@
   -ms-user-select: none;
   user-select: none;
 }
+@media (min-width: 800px) {
+	#container {
+	  width: 500px;
+	  margin: auto !important;
+	  display: block;
+	  height: 500px;
+	  position: relative;
+	}
+	.buddy {
+	  padding: 20px;
+	  width: 360px;
+	  height: 360px;
+	  top: 50px;
+	  left: 50px;
+	  position: relative;
+	  cursor: hand;
+	}
+	.avatar {
+	  width: 340px;
+	  height: 340px;
+	  display: block;
+	  margin-top: 10px;
+	  margin-left: 10px;
+	  background-size: 100% auto !important;
+	  background-position: center;
+	 background-repeat: no-repeat;
+	}
+
+}
+
 .buddy {
   display: none;
   background: #fff;
