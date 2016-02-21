@@ -1,7 +1,9 @@
 $(document).ready(function(){
     console.log("Document Ready!");
-
+	var counter = 0;
     $(".buddy").on("swiperight",function(){
+	  counter++;
+	  move();
       $(this).addClass('rotate-left').delay(700).fadeOut(1);
       $('.buddy').find('.status').remove();
       $(this).append('<div class="status like">Like!</div>');      
@@ -14,6 +16,8 @@ $(document).ready(function(){
     });  
 
    $(".buddy").on("swipeleft",function(){
+	  counter++;
+	  move();
     $(this).addClass('rotate-right').delay(700).fadeOut(1);
     $('.buddy').find('.status').remove();
     $(this).append('<div class="status dislike">Dislike!</div>');
@@ -37,6 +41,8 @@ function moveSomething(e) {
             $('.top').addClass('rotate-right').delay(700).fadeOut(1);
             $('.top').find('.status').remove();
             $('.top').append('<div class="status dislike">Dislike!</div>');
+			  counter++;
+			  move();
             if ( $('.top').is(':last-child') ) {
              $('.buddy:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
               alert('Na-na!');
@@ -48,7 +54,9 @@ function moveSomething(e) {
             // right key pressed
             $('.top').addClass('rotate-left').delay(700).fadeOut(1);
             $('.top').find('.status').remove();
-            $('.top').append('<div class="status dislike">Dislike!</div>');
+            $('.top').append('<div class="status like">Like!</div>');
+			  counter++;
+			  move();
             if ( $('.top').is(':last-child') ) {
              $('.buddy:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
               alert('Na-na!');
@@ -57,6 +65,12 @@ function moveSomething(e) {
              }
             break;
   }
+}
+
+ function move() {
+    var elem = document.getElementById("myBar");
+    var width = counter;
+	elem.style.width = width + '%';
 }
 
 });
