@@ -71,7 +71,13 @@ function moveSomething(e) {
 function move() {
     var elem = document.getElementById("myBar");
     var width = counter;
+	update_matches();
 	elem.style.width = width + '%';
+}
+
+function update_matches() {
+	var elem = document.getElementById("num-matches");
+	elem.innerHTML = counter;
 }
 
 });

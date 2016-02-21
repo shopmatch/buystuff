@@ -215,7 +215,7 @@ background: #fff;
 	position: relative;
 	top: -5px;
 }
-.num-matches {
+#num-matches {
 	position: relative;
 	top: 5px;
 }
