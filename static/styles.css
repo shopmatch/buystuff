@@ -24,7 +24,7 @@
   height: 360px;
   top: 50px;
   left: 50px;
-  position: absolute;
+  position: relative;
   cursor: hand;
 }
 .rotate-left {
@@ -75,4 +75,94 @@
   top: 50px;
   left: 40px;
   text-shadow: none;
+}
+
+.container {
+  margin-top: 1px;
+  zoom: 1;
+  margin: auto;
+}
+
+.container-2 {
+  background.color:white;
+  width: 95%;
+  height: 30px;
+  *zoom: 1;
+}
+  
+.container-75 {
+  width: 80%;
+  position: center;
+  background-position: center;
+  text-align:center;
+}
+
+.column {
+  float: left;
+   position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:-1;
+  width: 240px;
+  min-height: 100%;
+  background: white
+}
+
+#myProgress {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    background-color: black ;
+}
+#myBar {
+    width: 10px;
+    height: 30px;
+    position: absolute;
+    background-color: white;
+}
+
+#framecontent{
+position: absolute;
+top: 0;
+bottom: 0; 
+left: 0;
+width: 20%; /*Width of frame div*/
+height: 100%;
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background: #990000;
+color: white;
+zoom: 1;
+
+}
+
+#framecontent2{
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+width: 20%; /*Width of frame div*/
+height: 100%;
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background: #990000;
+color: white;
+zoom: 1;
+
+}
+
+
+#maincontent{
+position: fixed;
+top: 0; 
+left: 200px; /*Set left value to WidthOfFrameDiv*/
+right: 0;
+bottom: 0;
+overflow: auto; 
+background: #fff;
+}
+
+.ui-loader > .ui-icon-loading {
+    display: hidden;
 }
